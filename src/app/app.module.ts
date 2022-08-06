@@ -60,28 +60,13 @@ import { FooterTwoScreenComponent } from './Screens/Footer/footer-two-screen/foo
 import { BlogOneScreenComponent } from './Screens/Blog/blog-one-screen/blog-one-screen.component';
 import { BlogTwoScreenComponent } from './Screens/Blog/blog-two-screen/blog-two-screen.component';
 import { MenusComponent } from './Shared/Components/menus/menus.component';
-import { LoginComponent } from './Screens/login/login.component';
-import { HeaderComponent } from './Screens/header/header.component';
-import { FooterComponent } from './Screens/footer/footer.component';
-import { BlogComponent } from './Screens/blog/blog.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginOneScreenComponent,
-    LoginTwoScreenComponent,
-    HeaderOneScreenComponent,
-    HeaderTwoScreenComponent,
-    FooterOneScreenComponent,
-    FooterTwoScreenComponent,
-    BlogOneScreenComponent,
-    BlogTwoScreenComponent,
-    MenusComponent,
-    LoginComponent,
-    HeaderComponent,
-    FooterComponent,
-    BlogComponent
+    MenusComponent
   ],
   imports: [
     BrowserModule,

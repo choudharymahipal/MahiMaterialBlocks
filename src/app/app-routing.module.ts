@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: '/login/login_one',
     pathMatch: 'full',
   }
 ];
