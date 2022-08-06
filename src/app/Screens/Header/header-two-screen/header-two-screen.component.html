@@ -1,1 +1,50 @@
-<p>header-two-screen works!</p>
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">visibility</mat-icon>
+            Preview
+        </ng-template>
+        <div class="mahiContainer">
+            Footer Content 1
+        </div>
+
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">code</mat-icon>
+            View Code
+        </ng-template>
+        <div class="mahiContainer">
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        HTML
+                    </ng-template>
+                    <div class="mahiContainer">
+                        HTML code goes here
+                    </div>
+
+                </mat-tab>
+
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        TS
+                    </ng-template>
+                    <div class="mahiContainer">
+                        TS code goes here
+                    </div>
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        SCSS
+                    </ng-template>
+                    <div class="mahiContainer">
+                        SCSS code goes here
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>

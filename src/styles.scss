@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 //Scroll bar css
 ::-webkit-scrollbar {
@@ -16,10 +22,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background: #f1f1f1;
 }
 
-.marginBottom{
+.marginBottom {
     margin-bottom: 10px !important;
 }
 
-.mahiContainer{
+.mahiContainer {
     padding: 15px;
+}
+
+.example-tab-icon {
+    margin-right: 8px;
 }

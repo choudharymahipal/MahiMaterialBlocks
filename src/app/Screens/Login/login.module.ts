@@ -5,6 +5,7 @@ import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
 import { LoginOneScreenComponent } from './login-one-screen/login-one-screen.component';
 import { LoginTwoScreenComponent } from './login-two-screen/login-two-screen.component';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { LoginTwoScreenComponent } from './login-two-screen/login-two-screen.com
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule
+    LoginRoutingModule,
+    MaterialModule
   ]
 })
 export class LoginModule { }

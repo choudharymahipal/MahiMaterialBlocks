@@ -5,6 +5,7 @@ import { FooterRoutingModule } from './footer-routing.module';
 import { FooterComponent } from './footer.component';
 import { FooterOneScreenComponent } from './footer-one-screen/footer-one-screen.component';
 import { FooterTwoScreenComponent } from './footer-two-screen/footer-two-screen.component';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterTwoScreenComponent } from './footer-two-screen/footer-two-screen.
   ],
   imports: [
     CommonModule,
-    FooterRoutingModule
+    FooterRoutingModule,
+    MaterialModule
   ]
 })
 export class FooterModule { }
