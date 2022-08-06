@@ -1,0 +1,180 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-card {
+    max-width: auto;
+}
+
+.example-header-image {
+    background-image: url("https://i.stack.imgur.com/OGGCY.jpg?s=256&g=1");
+    background-size: cover;
+}
+
+.contentBody {
+    min-height: 200px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 20%;
+}
+
+.SearchDD {
+    width: 200px;
+}
+
+.SubmitBtn {
+    margin-left: 240px;
+    margin-top: -50px;
+}
+
+.btnsbmt {
+    margin-right: 5px;
+}
+
+//sidenav css
+
+.example-container {
+    // width: 500px;
+    height: 90%;
+    //border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+  
+}
+
+.example-sidenav {
+    padding: 20px 5px 20px 20px;;
+    min-width: 250px;
+}
+
+.HeaderNotficationMenu {
+    display: flex;
+}
+
+.paddingRight {
+    padding-right: 20px;
+}
+
+section {
+    display: table;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.example-button-row {
+    display: table-cell;
+    width: 170px;
+}
+
+.example-button-row .mat-button-base {
+    margin: 8px 15px 8px 0;
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.NotifyText {
+    word-wrap: break-word;
+}
+
+.mat-card-header .mat-card-title {
+    font-size: 15px;
+}
+
+.mat-card {
+    padding: 10px 10px 0px 10px;
+    border-radius: 0px;
+}
+.mat-card:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.mat-card-actions,
+.mat-card-subtitle,
+.mat-card-content {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.mat-card-header .mat-card-title {
+    margin-bottom: 8px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.timerIcon {
+    font-size: 15px;
+    vertical-align: -webkit-baseline-middle;
+    color: rgba(0, 0, 0, 0.54);
+    width: 17px;
+}
+
+//Tree
+.example-tree-invisible {
+    display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+/*
+   * This padding sets alignment of the nested nodes.
+   */
+.example-tree .mat-nested-tree-node div[role="group"] {
+    padding-left: 40px;
+}
+
+/*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+.example-tree div[role="group"] > .mat-tree-node {
+    padding-left: 40px;
+}
+
+
