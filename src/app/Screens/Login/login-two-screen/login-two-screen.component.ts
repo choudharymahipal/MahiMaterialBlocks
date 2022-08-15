@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-two-screen.component.scss']
 })
 export class LoginTwoScreenComponent implements OnInit {
-
+  htmlCode: string = "";
+  tsCode: string = "";
+  scssCode: string = "";
+  
   constructor() { }
 
   ngOnInit(): void {

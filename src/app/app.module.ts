@@ -17,12 +17,11 @@ import { BlogTwoScreenComponent } from './Screens/Blog/blog-two-screen/blog-two-
 import { MenusComponent } from './Shared/Components/menus/menus.component';
 import { MaterialModule } from './material.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     MenusComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -30,8 +29,26 @@ import { MaterialModule } from './material.module';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     MaterialModule
+    //HighlightModule
   ],
-  providers: [],
+  providers: [
+    //Help: https://ngx-highlight.netlify.app/
+
+    // {
+    //   provide: HIGHLIGHT_OPTIONS,
+    //   useValue: <HighlightOptions>{
+    //     lineNumbers: true,
+    //     coreLibraryLoader: () => import('highlight.js/lib/core'),
+    //     //lineNumbersLoader: () => import('highlightjs-line-numbers.js'),
+    //     themePath: 'node_modules/highlight.js/styles/github.css',
+    //     languages: {
+    //       typescript: () => import('highlight.js/lib/languages/typescript'),
+    //       css: () => import('highlight.js/lib/languages/css'),
+    //       xml: () => import('highlight.js/lib/languages/xml'),
+    //     },
+    //   },
+    // }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

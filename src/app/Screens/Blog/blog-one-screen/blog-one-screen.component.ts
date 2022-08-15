@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-one-screen.component.scss']
 })
 export class BlogOneScreenComponent implements OnInit {
-
+  htmlCode: string = "";
+  tsCode: string = "";
+  scssCode: string = "";
+  
   constructor() { }
 
   ngOnInit(): void {

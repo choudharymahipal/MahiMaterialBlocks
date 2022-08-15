@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-one-screen.component.scss']
 })
 export class HeaderOneScreenComponent implements OnInit {
-
+  htmlCode: string = "";
+  tsCode: string = "";
+  scssCode: string = "";
+  
   constructor() { }
 
   ngOnInit(): void {
