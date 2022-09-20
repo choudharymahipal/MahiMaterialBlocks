@@ -6,7 +6,7 @@
         "Create new Angular app and push into your new repository.",
         "Follow below commands.",
         "npm install -g angular-cli-ghpages",
-        "ng build --prod --base-href \"https://choudharymahipal.github.io/MahiMaterialBlocks/\"",
+        "ng build --base-href \"https://choudharymahipal.github.io/MahiMaterialBlocks/\"",
         "ngh --dir dist/mahi-material-blocks"
     ]
 }
