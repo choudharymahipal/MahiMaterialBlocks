@@ -5,7 +5,33 @@
             Preview
         </ng-template>
         <div class="mahiContainer">
-            Footer Content 1
+            <mat-toolbar color="primary">
+                <button mat-icon-button class="example-icon"
+                    aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span>App Name here</span>
+                <span class="example-spacer"></span>
+                <span>Welcome User</span>
+                <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"
+                    aria-label="Example icon-button with menu icon">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <mat-icon>person</mat-icon>
+                      <span>Profile</span>
+                    </button>
+                    <button mat-menu-item>
+                      <mat-icon>settings</mat-icon>
+                      <span>Settings</span>
+                    </button>
+                    <button mat-menu-item>
+                      <mat-icon>logout</mat-icon>
+                      <span>Logout</span>
+                    </button>
+                  </mat-menu>
+            </mat-toolbar>
         </div>
 
     </mat-tab>
@@ -22,7 +48,7 @@
                         HTML
                     </ng-template>
                     <div class="mahiContainer">
-                        HTML code goes here
+                        <pre>{{htmlCode}}</pre>
                     </div>
 
                 </mat-tab>
@@ -32,7 +58,7 @@
                         TS
                     </ng-template>
                     <div class="mahiContainer">
-                        TS code goes here
+                        <pre>{{tsCode}}</pre>
                     </div>
                 </mat-tab>
                 <mat-tab>
@@ -40,7 +66,7 @@
                         SCSS
                     </ng-template>
                     <div class="mahiContainer">
-                        SCSS code goes here
+                        <pre>{{scssCode}}</pre>
                     </div>
                 </mat-tab>
             </mat-tab-group>
