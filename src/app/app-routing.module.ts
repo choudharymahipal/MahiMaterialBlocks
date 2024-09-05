@@ -23,6 +23,11 @@ const routes: Routes = [
       import('./Screens/Blog/blog.module').then((m) => m.BlogModule),
   },
   {
+    path: 'icons',
+    loadChildren: () =>
+      import('./Screens/icons/icons.module').then((m) => m.IconsModule),
+  },
+  {
     path: '',
     redirectTo: '/login/login_one',
     pathMatch: 'full',
