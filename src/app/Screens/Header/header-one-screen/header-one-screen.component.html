@@ -12,25 +12,108 @@
                 </button>
                 <span>App Name here</span>
                 <span class="example-spacer"></span>
+                <section>
+                    <div class="example-button-row">
+                        <div class="example-flex-container">
+                            <button mat-icon-button
+                                [matMenuTriggerFor]="notifications">
+                                <mat-icon matBadge="5"
+                                    matBadgeColor="warn">notifications</mat-icon>
+                            </button>
+                            <mat-menu #notifications="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>chat</mat-icon>
+                                    <span>3 new messages</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>group</mat-icon>
+                                    <span>8 friend requests</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>thumb_up</mat-icon>
+                                    <span>102 friends like your post</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item class="textCenter"
+                                    routerLink="/notification">
+                                    <span>See All Notifications</span>
+                                </button>
+
+                            </mat-menu>
+                            <button mat-icon-button [matMenuTriggerFor]="chat">
+                                <mat-icon matBadge="3"
+                                    matBadgeColor="warn">chat</mat-icon>
+                            </button>
+                            <mat-menu #chat="matMenu">
+                                <mat-card class="example-card cursorPointer">
+                                    <mat-card-header>
+                                        <div mat-card-avatar
+                                            class="example-header-image"></div>
+                                        <mat-card-title>Mahipal
+                                            Choudhary</mat-card-title>
+                                        <mat-card-subtitle>
+                                            <div>Call me whenever you
+                                                can..</div>
+                                            <div>
+                                                <mat-icon class="timerIcon"
+                                                    color="primary">schedule</mat-icon>4
+                                                hours ago
+                                            </div>
+                                        </mat-card-subtitle>
+                                    </mat-card-header>
+                                </mat-card>
+                                <mat-divider></mat-divider>
+                                <mat-card class="example-card cursorPointer">
+                                    <mat-card-header>
+                                        <div mat-card-avatar
+                                            class="example-header-image1"></div>
+                                        <mat-card-title>Alex</mat-card-title>
+                                        <mat-card-subtitle>
+                                            <div>I got your message bro..</div>
+                                            <div>
+                                                <mat-icon class="timerIcon"
+                                                    color="primary">schedule</mat-icon>5
+                                                hours ago
+                                            </div>
+                                        </mat-card-subtitle>
+                                    </mat-card-header>
+                                </mat-card>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item class="textCenter"
+                                    routerLink="/inbox">
+                                    <span>See All Messages</span>
+                                </button>
+                            </mat-menu>
+
+                        </div>
+                    </div>
+                </section>
                 <span>Welcome User</span>
-                <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"
+                <button mat-icon-button [matMenuTriggerFor]="menu"
+                    class="example-icon"
                     aria-label="Example icon-button with menu icon">
                     <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item>
-                      <mat-icon>person</mat-icon>
-                      <span>Profile</span>
+                    <button mat-menu-item routerLink="/dashboard">
+                        <mat-icon>dashboard</mat-icon>
+                        <span>Dashboard</span>
+                    </button>
+                    <button mat-menu-item routerLink="/profile">
+                        <mat-icon>account_circle</mat-icon>
+                        <span>Profile</span>
+                    </button>
+                    <button mat-menu-item routerLink="/changepassword">
+                        <mat-icon>lock_reset</mat-icon>
+                        <span>Change Password</span>
                     </button>
                     <button mat-menu-item>
-                      <mat-icon>settings</mat-icon>
-                      <span>Settings</span>
+                        <mat-icon>logout</mat-icon>
+                        <span>Logout</span>
                     </button>
-                    <button mat-menu-item>
-                      <mat-icon>logout</mat-icon>
-                      <span>Logout</span>
-                    </button>
-                  </mat-menu>
+                </mat-menu>
             </mat-toolbar>
         </div>
 

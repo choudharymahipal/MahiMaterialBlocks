@@ -8,6 +8,11 @@ const routes: Routes = [
       import('./Screens/Login/login.module').then((m) => m.LoginModule),
   },
   {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./Screens/dashboard/dashboard.module').then((m) => m.DashboardModule),
+  },
+  {
     path: 'header',
     loadChildren: () =>
       import('./Screens/Header/header.module').then((m) => m.HeaderModule),
