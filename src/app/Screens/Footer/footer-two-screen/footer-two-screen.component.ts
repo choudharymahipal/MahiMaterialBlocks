@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
   selector: 'app-footer-two-screen',
@@ -10,9 +11,12 @@ export class FooterTwoScreenComponent implements OnInit {
   tsCode: string = "";
   scssCode: string = "";
   
-  constructor() { }
+  constructor(private commonSvc:CommonService) { }
 
   ngOnInit(): void {
   }
 
+  copyCode(data:string){
+    this.commonSvc.copyToClipboard(data);
+  }
 }

@@ -6,7 +6,7 @@
         </ng-template>
         <div class="mahiContainer">
             <div class="grid-container">
-                <h1 class="mat-h1">Dashboard</h1>
+                <h1 class="mat-h1">Dashboard 1</h1>
                 <mat-grid-list cols="2" rowHeight="350px">
                   <!-- Card1 -->
                   <mat-grid-tile [colspan]="2" [rowspan]="1">
@@ -131,6 +131,7 @@
                         HTML
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(htmlCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{htmlCode}}</pre>
                     </div>
 
@@ -141,6 +142,7 @@
                         TS
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(tsCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{tsCode}}</pre>
                     </div>
                 </mat-tab>
@@ -149,6 +151,7 @@
                         SCSS
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(scssCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{scssCode}}</pre>
                     </div>
                 </mat-tab>

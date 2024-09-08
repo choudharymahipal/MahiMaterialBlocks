@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
   selector: 'app-header-one-screen',
@@ -194,7 +195,11 @@ export class HeaderOneScreenComponent implements OnInit {
 }
   `;
 
-  constructor() {}
+  constructor(private commonSvc:CommonService) {}
 
   ngOnInit(): void {}
+  
+  copyCode(data:string){
+    this.commonSvc.copyToClipboard(data);
+  }
 }

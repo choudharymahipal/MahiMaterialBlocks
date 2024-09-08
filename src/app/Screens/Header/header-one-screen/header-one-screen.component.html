@@ -5,6 +5,7 @@
             Preview
         </ng-template>
         <div class="mahiContainer">
+            <h1 class="mat-h1">Header 1</h1>
             <mat-toolbar color="primary">
                 <button mat-icon-button class="example-icon"
                     aria-label="Example icon-button with menu icon">
@@ -131,6 +132,7 @@
                         HTML
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(htmlCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{htmlCode}}</pre>
                     </div>
 
@@ -141,6 +143,7 @@
                         TS
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(tsCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{tsCode}}</pre>
                     </div>
                 </mat-tab>
@@ -149,6 +152,7 @@
                         SCSS
                     </ng-template>
                     <div class="mahiContainer">
+                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(scssCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
                         <pre>{{scssCode}}</pre>
                     </div>
                 </mat-tab>

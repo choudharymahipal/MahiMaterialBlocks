@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
   selector: 'app-blog-one-screen',
@@ -10,9 +11,13 @@ export class BlogOneScreenComponent implements OnInit {
   tsCode: string = "";
   scssCode: string = "";
   
-  constructor() { }
+  constructor(private commonSvc:CommonService) { }
 
   ngOnInit(): void {
+  }
+
+  copyCode(data:string){
+    this.commonSvc.copyToClipboard(data);
   }
 
 }

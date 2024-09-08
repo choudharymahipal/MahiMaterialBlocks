@@ -5,7 +5,7 @@
       Preview
     </ng-template>
     <div class="mahiContainer">
-      <!-- <h3>Login Example 01</h3> -->
+      <h1 class="mat-h1">Login 1</h1>
       <div class="container">
         <mat-card>
           <mat-card-content>
@@ -55,6 +55,7 @@
             HTML
           </ng-template>
           <div class="mahiContainer">
+            <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(htmlCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
             <pre>
               {{htmlCode}}
               <!-- <code [highlight]="">{{htmlCode}}</code>
@@ -68,6 +69,7 @@
             TS
           </ng-template>
           <div class="mahiContainer">
+            <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(tsCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
             <pre>{{tsCode}}</pre>
           </div>
         </mat-tab>
@@ -76,6 +78,7 @@
             SCSS
           </ng-template>
           <div class="mahiContainer">
+            <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(scssCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
             <pre>{{scssCode}}</pre>
           </div>
         </mat-tab>

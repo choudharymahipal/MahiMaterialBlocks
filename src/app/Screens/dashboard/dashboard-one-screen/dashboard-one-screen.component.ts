@@ -1,6 +1,7 @@
 import { BreakpointObserver,Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
   selector: 'app-dashboard-one-screen',
@@ -121,32 +122,7 @@ export class DashboardOneScreenComponent implements OnInit {
 </div>
   `;
   tsCode: string = `
-  import { BreakpointObserver,Breakpoints } from '@angular/cdk/layout';
-  import { map } from 'rxjs/operators';
 
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
-      }
-
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    })
-  );
-
-  constructor(private breakpointObserver: BreakpointObserver) {
-    
-  }
   `;
   scssCode: string = `
 .grid-container {
@@ -173,32 +149,16 @@ export class DashboardOneScreenComponent implements OnInit {
 
   `;
 
-/** Based on the screen size, switch from standard to one column per row */
-cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-  map(({ matches }) => {
-    if (matches) {
-      return [
-        { title: 'Card 1', cols: 1, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 1 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    }
 
-    return [
-      { title: 'Card 1', cols: 2, rows: 1 },
-      { title: 'Card 2', cols: 1, rows: 1 },
-      { title: 'Card 3', cols: 1, rows: 2 },
-      { title: 'Card 4', cols: 1, rows: 1 }
-    ];
-  })
-);
-
-constructor(private breakpointObserver: BreakpointObserver) {
+constructor(private commonSvc:CommonService) {
     
 }
 
   ngOnInit(): void {
   }
 
+  copyCode(data:string){
+    this.commonSvc.copyToClipboard(data);
+  }
+  
 }

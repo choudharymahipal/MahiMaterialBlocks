@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
   selector: 'app-login-one-screen',
@@ -88,7 +89,8 @@ export class LoginOneScreenComponent implements OnInit {
   }`;
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private commonSvc:CommonService
   ) {
     this.loginForm = this.fb.group({
       username: [null],
@@ -105,6 +107,8 @@ export class LoginOneScreenComponent implements OnInit {
   }
 
 
-
+  copyCode(data:string){
+    this.commonSvc.copyToClipboard(data);
+  }
 
 }
