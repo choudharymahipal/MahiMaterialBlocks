@@ -2,13 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { CommonService } from 'src/app/Shared/Services/common.service';
 
 @Component({
-  selector: 'app-header-two-screen',
-  templateUrl: './header-two-screen.component.html',
-  styleUrls: ['./header-two-screen.component.scss'],
+  selector: 'app-header-three-screen',
+  templateUrl: './header-three-screen.component.html',
+  styleUrls: ['./header-three-screen.component.scss']
 })
-export class HeaderTwoScreenComponent implements OnInit {
+export class HeaderThreeScreenComponent implements OnInit {
   htmlCode: string = `
   <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon"
+        aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+    </button>
     <span>App Name here</span>
     <span class="example-spacer"></span>
     <section>

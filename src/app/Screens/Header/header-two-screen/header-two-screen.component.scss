@@ -1,0 +1,78 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 170px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 15px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.timerIcon {
+  font-size: 15px;
+  vertical-align: -webkit-baseline-middle;
+  color: rgba(0, 0, 0, 0.54);
+  width: 17px;
+}
+
+.example-card {
+  max-width: auto;
+}
+
+.example-header-image {
+  background-image: url("https://avatars.githubusercontent.com/u/48117150?v=4");
+  background-size: cover;
+}
+.example-header-image1 {
+  background-image: url("https://randomuser.me/api/portraits/thumb/lego/1.jpg");
+  background-size: cover;
+}
+.example-header-image2 {
+  background-image: url("https://randomuser.me/api/portraits/thumb/lego/2.jpg");
+  background-size: cover;
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 15px;
+}
+
+.mat-card {
+  padding: 10px 10px 0px 10px;
+  border-radius: 0px;
+}
+.mat-card:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+.mat-card-actions,
+.mat-card-subtitle,
+.mat-card-content {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 8px;
+}

@@ -9,10 +9,6 @@ import { CommonService } from 'src/app/Shared/Services/common.service';
 export class HeaderOneScreenComponent implements OnInit {
   htmlCode: string = `
   <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon"
-        aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-    </button>
     <span>App Name here</span>
     <span class="example-spacer"></span>
     <section>
