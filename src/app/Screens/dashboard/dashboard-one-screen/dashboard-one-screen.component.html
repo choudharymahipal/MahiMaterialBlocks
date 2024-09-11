@@ -1,3 +1,11 @@
+<div>
+  <button mat-button color="primary" routerLink="/"><mat-icon>home</mat-icon></button>
+  <span>/</span>
+  <button mat-button><mat-icon>folder</mat-icon><span> Dashboard</span></button>
+  <span>/</span>
+  <button mat-button color="primary" routerLink="/dashboard/dashboard_one"><mat-icon>folder</mat-icon><span> Dashboard Example 01</span></button>
+</div>
+<mat-divider class="marginBottom"></mat-divider>
 <mat-tab-group>
     <mat-tab>
         <ng-template mat-tab-label>
@@ -6,7 +14,6 @@
         </ng-template>
         <div class="mahiContainer">
             <div class="grid-container">
-                <h1 class="mat-h1">Dashboard 1</h1>
                 <mat-grid-list cols="2" rowHeight="350px">
                   <!-- Card1 -->
                   <mat-grid-tile [colspan]="2" [rowspan]="1">

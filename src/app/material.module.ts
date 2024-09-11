@@ -99,6 +99,6 @@ import { OverlayModule } from '@angular/cdk/overlay';
     PortalModule,
     ScrollingModule,
     //CdkMenuModule
-  ]
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}

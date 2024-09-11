@@ -1,3 +1,15 @@
+<div>
+    <button mat-button color="primary"
+        routerLink="/"><mat-icon>home</mat-icon></button>
+    <span>/</span>
+    <button mat-button><mat-icon>folder</mat-icon><span>
+            Dashboard</span></button>
+    <span>/</span>
+    <button mat-button color="primary"
+        routerLink="/dashboard/dashboard_two"><mat-icon>folder</mat-icon><span>
+            Dashboard Example 02</span></button>
+</div>
+<mat-divider class="marginBottom"></mat-divider>
 <mat-tab-group>
     <mat-tab>
         <ng-template mat-tab-label>
@@ -6,7 +18,6 @@
         </ng-template>
         <div class="mahiContainer">
             <div class="grid-container">
-                <h1 class="mat-h1">Dashboard 2</h1>
                 <mat-grid-list cols="4" rowHeight="200px">
                     <!-- Card1 -->
                     <mat-grid-tile>
@@ -221,7 +232,10 @@
                         HTML
                     </ng-template>
                     <div class="mahiContainer">
-                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(htmlCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
+                        <button mat-flat-button color="primary"
+                            class="copyCodeBtn"
+                            (click)="copyCode(htmlCode)"><mat-icon>content_copy</mat-icon>
+                            Copy code</button>
                         <pre>{{htmlCode}}</pre>
                     </div>
 
@@ -232,7 +246,10 @@
                         TS
                     </ng-template>
                     <div class="mahiContainer">
-                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(tsCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
+                        <button mat-flat-button color="primary"
+                            class="copyCodeBtn"
+                            (click)="copyCode(tsCode)"><mat-icon>content_copy</mat-icon>
+                            Copy code</button>
                         <pre>{{tsCode}}</pre>
                     </div>
                 </mat-tab>
@@ -241,7 +258,10 @@
                         SCSS
                     </ng-template>
                     <div class="mahiContainer">
-                        <button mat-flat-button color="primary" class="copyCodeBtn" (click)="copyCode(scssCode)"><mat-icon>content_copy</mat-icon> Copy code</button>
+                        <button mat-flat-button color="primary"
+                            class="copyCodeBtn"
+                            (click)="copyCode(scssCode)"><mat-icon>content_copy</mat-icon>
+                            Copy code</button>
                         <pre>{{scssCode}}</pre>
                     </div>
                 </mat-tab>
