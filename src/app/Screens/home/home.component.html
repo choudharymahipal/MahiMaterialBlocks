@@ -1,65 +1,85 @@
 
 <div class="mahiContainer">
     <div>
-        <button mat-button color="primary" routerLink="/"><mat-icon>home</mat-icon></button>
+        <button mat-button color="primary"
+            routerLink="/"><mat-icon>home</mat-icon></button>
         <span>/</span>
-        <button mat-button color="primary" routerLink="/"><mat-icon>folder</mat-icon><span> All Blocks</span></button>
+        <button mat-button color="primary"
+            routerLink="/"><mat-icon>folder</mat-icon><span> All
+                Blocks</span></button>
     </div>
     <mat-divider class="marginBottom"></mat-divider>
+
     <div class="grid-container">
-        <mat-grid-list cols="4" rowHeight="200px">
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Login1.png" alt="login1" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
+        <div class="cardMainDiv">
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/login/login_one')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Login Example
+                        01</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Login1.png"
+                    alt="login1">
+            </mat-card>
+        </div>
+        <div class="cardMainDiv">
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/dashboard/dashboard_one')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Dashboard Example
+                        01</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Dashboard1.png"
+                    alt="Dashboard1">
+            </mat-card>
 
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Dashboard1.png" alt="Dashboard1" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
-            
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Dashboard2.png" alt="Dashboard2" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/dashboard/dashboard_two')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Dashboard Example
+                        02</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Dashboard2.png"
+                    alt="Dashboard2">
+            </mat-card>
+        </div>
 
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Header1.png" alt="Header1" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
-        </mat-grid-list>
+        <div class="cardMainDiv">
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/header/header_one')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Header Example
+                        01</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Header1.png"
+                    alt="Header1">
+            </mat-card>
 
-        <mat-grid-list cols="4" rowHeight="200px">
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Header2.png" alt="Header2" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/header/header_two')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Header Example
+                        02</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Header2.png"
+                    alt="Header2" />
+            </mat-card>
 
-            <mat-grid-tile>
-                <mat-card class="dashboard-card">
-                    <mat-card-content class="dashboard-card-content">
-                        <img src="assets/img/Header3.png" alt="Header3" />
-                    </mat-card-content>
-                </mat-card>
-            </mat-grid-tile>
-
-
-        </mat-grid-list>
-
+            <mat-card class="example-card iAmLink"
+                (click)="redirectMe('/header/header_three')">
+                <mat-card-header>
+                    <mat-card-title class="blueText">Header Example
+                        03</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image
+                    src="assets/img/Header3.png"
+                    alt="Header3" />
+            </mat-card>
+        </div>
     </div>
 </div>

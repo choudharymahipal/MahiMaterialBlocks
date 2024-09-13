@@ -1,19 +1,9 @@
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  overflow: hidden;
+.cardMainDiv{
+  display: flex;
 }
 
-.dashboard-card-content {
-  text-align: center;
-  align-content: center;
+.example-card {
+  max-width: 350px;
+  margin: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
