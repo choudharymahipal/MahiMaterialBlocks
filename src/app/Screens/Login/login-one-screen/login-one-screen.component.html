@@ -100,6 +100,28 @@
             <pre>{{scssCode}}</pre>
           </div>
         </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            app.module.ts
+          </ng-template>
+          <div class="mahiContainer">
+            <button mat-flat-button color="primary" class="copyCodeBtn"
+              (click)="copyCode(appModuleCode)"><mat-icon>content_copy</mat-icon>
+              Copy code</button>
+            <pre>{{appModuleCode}}</pre>
+          </div>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            material.module.ts
+          </ng-template>
+          <div class="mahiContainer">
+            <button mat-flat-button color="primary" class="copyCodeBtn"
+              (click)="copyCode(materialModuleCode)"><mat-icon>content_copy</mat-icon>
+              Copy code</button>
+            <pre>{{materialModuleCode}}</pre>
+          </div>
+        </mat-tab>
       </mat-tab-group>
     </div>
   </mat-tab>
