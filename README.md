@@ -1,9 +1,8 @@
-# MahiMaterialBlocks
+## MahiMaterialBlocks
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
--------------------------------------------------------------------------
+
 Live DEMO 🏻👉: [https://choudharymahipal.github.io/MahiMaterialBlocks](https://choudharymahipal.github.io/MahiMaterialBlocks/login/login_one)
--------------------------------------------------------------------------
 
 
 ## Development server
